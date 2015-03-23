@@ -34,4 +34,5 @@ On first run, you have to paste in a raw SCSS file with the color palette defini
 - Improve parsing to filter
   - SASS rules
   - Block comments
-  - Term highlighting
+- rgb value evaluation (no alpha)
+- Term highlighting
