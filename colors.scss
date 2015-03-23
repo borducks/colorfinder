@@ -1,0 +1,151 @@
+//__
+//__ CLEAN CODE IS HAPPY CODE.
+//__
+
+//__
+//__ BASE COLORS
+//__
+$black:     #373a3e;
+$black_a50: rgba($black, 0.5);
+$black_a20: rgba($black, 0.2);
+$black_a10: rgba($black, 0.1);
+
+$darkblack: darken($black, 20%);
+
+$white:     #fff;
+$white_a90: rgba($white, 0.9);
+$white_a70: rgba($white, 0.7);
+$white_a50: rgba($white, 0.5);
+
+$blue:        #136ad5;    $newblue: $blue;         $new-blue: $blue;           $new_blue: $blue;
+$blue_75:     #4e8fe0;
+$blue_50:     #7aabe8;    $lightblue: $blue_50;    $light-blue: $lightblue;    $light_blue: $lightblue;
+$blue_25:     #9bc0ee;
+$blue_15:     #dce9f9;
+$darkblue:    #0854cf;    $dark-blue: $darkblue;   $dark_blue: $darkblue;
+$shadowblue:  #0e52a7;
+$blue_a90: rgba($blue, 0.9);
+$blue_a50: rgba($blue, 0.5);
+$blue_a20: rgba($blue, 0.2);
+$blue_a10: rgba($blue, 0.1);
+
+$bright_blue: #16a6f0;
+
+$orange:        #fb8a2e;    $neworange: $orange;          $new-orange: $orange;    $new_orange: $orange;
+$orange_75:     #ffa159;
+$orange_50:     #ffb983;
+$orange_25:     #ffcba2;
+$darkorange:    #ff7e38;    $dark-orange: $darkorange;    $dark_orange: $darkorange;
+$shadoworange:  #b14206;
+
+//__
+//__ 50 SHADES OF GREY
+//__
+$black_90: #4b4d51;
+$black_80: #5f6165;
+$black_70: #737578; //__ ACCENT TEXT <p> text
+$black_60: #87898b;
+$black_50: #9b9c9e; //__ HINT TEXT <INPUT> TEXT
+$black_40: #afb0b2;
+$black_30: #c3c4c5; //__ 1PX BORDER COLOR
+$black_20: #d7d8d8; //__ INSET BOX-SHADOW //__DIVIDER OR RULE ON WHITE
+$black_15: #e1e2e2; //__ TEXT THAT GETS WHITE HOVER EFFECT
+$black_10: #ebebeb; //__ MAIN SITE BG COLOR / FOOTERS BG COLOR / DISABLED BUTTON BG COLOR
+$black_06: #f3f3f4; //__ MAIN SITE BG COLOR
+$black_03: #f9f9f9;
+
+//__
+//__ OTHER NAMES FOR THE SAME THINGS
+//__
+$gray_90: $black_90;    $grey_90: $black_90;
+$gray_80: $black_80;    $grey_80: $black_80;
+$gray_70: $black_70;    $grey_70: $black_70;
+$gray_60: $black_60;    $grey_60: $black_60;
+$gray_50: $black_50;    $grey_50: $black_50;
+$gray_40: $black_40;    $grey_40: $black_40;
+$gray_30: $black_30;    $grey_30: $black_30;
+$gray_20: $black_20;    $grey_20: $black_20;
+$gray_10: $black_10;    $grey_10: $black_10;
+$gray_06: $black_06;    $grey_06: $black_06;
+$gray_03: $black_03;    $grey_03: $black_03;
+
+$accent:                  $black_70;
+$bg-footer:               $black_10;
+$bg:                      $black_06;
+$border_color:            $black_30;    $border-color:    $border_color;
+$border_color_light:      $black_20;    $border-color-light:    $border_color_light;
+$font-color:              $black;
+$hint:                    $black_50;
+$rhr_border:              $black_20;    $right-module-border-color:    $black_20;
+
+
+//__
+//__ TERTIARY COLORS && GUTE CATEGORY COLORS
+//__
+$red:     #f44848;    $error: $red;
+$red_75:  #f77676;
+$red_50:  #f99898;
+$red_25:  #fbb2b2;
+$red_05:  #fcf7f7;
+
+$pink:     #f14986;
+$pink_75:  #f577a4;
+$pink_50:  #f899bb;
+$pink_25:  #fab3cc;
+
+$purple:     #5352ba;
+$purple_75:  #7e7dcb;
+$purple_50:  #9e9ed8;
+$purple_25:  #b6b6e2;
+
+$green:     #33b436;
+$green_75:  #66c768;
+$green_50:  #8cd58e;
+$green_25:  #a9e0aa;
+
+$aqua:     #16a6f0;
+$aqua_75:  #50bcf4;
+$aqua_50:  #7ccdf7;
+$aqua_25:  #9ddaf9;
+
+$yellow:     #fdd80d;
+$yellow_75:  #fee24a;
+$yellow_50:  #fee977;
+$yellow_25:  #feef99;
+
+//__
+//__ GUTE COLORS
+//__
+$gute_celebs: $pink;        $celebs: $gute_celebs;
+$gute_food: $red;           $food: $gute_food;
+$gute_health: $aqua_75;     $health: $gute_health;
+$gute_lifestyle: $yellow;   $lifestyle: $gute_lifestyle;
+$gute_money: $green;        $money: $gute_money;
+$gute_politics: $purple;    $politics: $gute_politics;
+$gute_sports: #7d7d7d;      $sports: $gute_sports; //__ DANNY IS GOING TO CHANGE THIS.
+$gute_tech: $green_75;      $tech: $gute_tech;     $technology: $tech;
+
+//__
+//__ HIGHLIGHT COLORS
+//__
+$lightyellow:  #feef99;    $light-yellow: $lightyellow;    $light_yellow: $lightyellow;
+$darkyellow:   #bc9c08;     $dark-yellow: $darkyellow;      $dark_yellow: $darkyellow;
+
+//__
+//__ SOCIAL COLORS
+//__
+$facebook:       #3b5998;
+$google:         #dd4b39;    $googleplus: $google;    $google-plus: $google;    $google_plus: $google;
+$linkedin:       #0e76ab;
+$pinterest:      #c92228;
+$reddit:         $black_80;
+$stumbleupon:    #f74425;
+$tumblr:         #34526f;
+$twitter:        #00acee;
+$youtube:        #b31217;
+
+//__
+//__ BRAND PAGE CARD COLORS
+//__
+$expert_border:         $green_75;
+$expert_text:           $green;

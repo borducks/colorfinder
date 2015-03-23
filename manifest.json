@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "UX Color Finder",
+    "description": "Search the red-carpet global color palette right here.",
+    "version": "1.0.2",
+    "browser_action": {
+        "default_icon": "cf_icon64.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "64": "cf_icon64.png"
+    },
+    "options_page": "cfprefs.html",
+    "permissions": [
+    "storage"
+    ]
+}
