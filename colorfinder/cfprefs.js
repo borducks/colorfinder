@@ -9,6 +9,7 @@ savebutton.addEventListener('click', function(e){
     var new_color_data = coloreditor.value;
     ls.set({color_data: new_color_data}, function(){
         console.log("new data saved");
+        alert ("Color data updated!");
     });
 });
 
