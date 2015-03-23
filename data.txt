@@ -1,8 +1,0 @@
-{
-    "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo laboriosam aspernatur autem ipsum recusandae libero rerum nesciunt consectetur provident voluptatibus fugiat quis perspiciatis ipsam, nemo corrupti unde possimus, modi. Blanditiis.",
-    "list" : [
-        "pear",
-        "banana",
-        "grape"
-    ]
-}
