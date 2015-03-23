@@ -26,7 +26,7 @@ On first run, you have to paste in a raw SCSS file with the color palette defini
 - The parser isn't super smart, so it won't yet handle data with SASS rules and block comments in it.
 - The parser is smart enough to handle inline comments and multiple variable assignments on the same line.
 - You can also manually add color assignments in the options. Use this format: `$color_variable: #112233;`
-- Self referencing assignments aren't evalutaed, so they won't have a color swatch.
+- Self referencing assignments aren't evaluated, so they won't have a color swatch.
 
 
 ###Next up###
@@ -34,5 +34,5 @@ On first run, you have to paste in a raw SCSS file with the color palette defini
 - Improve parsing to filter
   - SASS rules
   - Block comments
-- rgb value evaluation (no alpha)
+- rgba value evaluation for color swatches
 - Term highlighting
