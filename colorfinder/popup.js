@@ -51,6 +51,7 @@ function createResultItem(key, value, term) {
             s.style.backgroundColor = colordata[val_text];
         } else if (isHex(colordata[colordata[val_text]])) {
             s.style.backgroundColor = colordata[colordata[val_text]];
+            v.setAttribute("title", colordata[colordata[val_text]]);
         }
     }
 
