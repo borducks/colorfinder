@@ -19,7 +19,7 @@ term.addEventListener('keyup', function(e) {
         if (colorkeys[i].indexOf(term) > -1 || colordata[colorkeys[i]].indexOf(term) > -1) {
             key = colorkeys[i];
             val = colordata[colorkeys[i]];
-            createResultItem(key, val, term);
+            createResultItem(key, val, term);            
         }
     }
 });
@@ -29,6 +29,7 @@ function createResultItem(key, value, term) {
     var k = document.createElement("SPAN");
     k.className = "key";
     var v = document.createElement("SPAN");
+    v.className = "value";
     var s = document.createElement("SPAN");
     s.className = "swatch";
 
@@ -43,17 +44,31 @@ function createResultItem(key, value, term) {
         s.style.backgroundColor = colordata[value];
     }
 
+    // add hex val title to values that are also variables
+    if (val_text.indexOf("$") > -1 && colordata[val_text]) {
+        v.setAttribute("title", colordata[val_text]);
+        if (isHex(colordata[val_text])) {
+            s.style.backgroundColor = colordata[val_text];
+        } else if (isHex(colordata[colordata[val_text]])) {
+            s.style.backgroundColor = colordata[colordata[val_text]];
+        }
+    }
+
     // highlight found substring in display text
     key_text = key_text.replace(term, "<b>" + term + "</b>");
     val_text = val_text.replace(term, "<b>" + term + "</b>");
 
     k.innerHTML = key_text;
     v.innerHTML = val_text;
+
     l.appendChild(s);
     l.appendChild(k);
     l.appendChild(v);
     l.className += "color_result";
     result.appendChild(l);
+
+    console.log(result.getElementsByClassName('key'));
+
 }
 
 // oad color data from local storage

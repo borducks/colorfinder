@@ -43,3 +43,6 @@ function getColorData() {
     });
 }
 
+function isHex(val) {
+    return (val.indexOf("#") === 0);
+}

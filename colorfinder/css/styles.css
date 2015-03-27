@@ -69,6 +69,10 @@ input[type=text]:focus {
     width: 45%;
 }
 
+.color_result .value[title] {
+    cursor: help;
+}
+
 .swatch {
     width: 2em;
     height: 1em;
