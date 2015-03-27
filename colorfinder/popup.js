@@ -3,9 +3,14 @@ var term = document.getElementById('search_term');
 var result = document.getElementById('result');
 var error_display = document.getElementById('error');
 
+var manifest = chrome.runtime.getManifest();
+console.log(manifest.name + " v" + manifest.version + " ready.");
+document.getElementById('version').innerHTML = "v"+manifest.version;
+
 button.addEventListener('click', function(e) {
     result.innerHTML = term.value;
 });
+
 term.addEventListener('keyup', function(e) {
     // clear result block
     while (result.firstChild) {
@@ -68,7 +73,7 @@ function createResultItem(key, value, term) {
     l.className += "color_result";
     result.appendChild(l);
 
-    console.log(result.getElementsByClassName('key'));
+    // console.log(result.getElementsByClassName('key'));
 
 }
 

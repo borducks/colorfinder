@@ -12,7 +12,7 @@ function cleanColorData(data) {
 }
 
 function processColorData(data) {
-    console.log(data);
+    // console.log(data);
 
     var clist = data.split(";");
     for (var i = 0; i < clist.length; i++) {
@@ -21,7 +21,7 @@ function processColorData(data) {
             colordata[bits[0]] = bits[1];
         }
     }
-    console.dir(colordata);
+    // console.dir(colordata);
     colorkeys = Object.keys(colordata);
 
     return colordata;
